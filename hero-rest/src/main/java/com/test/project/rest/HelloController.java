@@ -16,11 +16,11 @@ import com.test.project.service.HelloWorldService;
 public class HelloController {
 
     @Autowired
-    private HelloWorldService helloWorldService;
+    private HelloWorldService myHelloService;
 
     @RequestMapping("/")
     @ResponseBody
     public String helloWorld() {
-        return this.helloWorldService.getHelloMessage();
+        return this.myHelloService.getHelloMessage();
     }
 }

@@ -15,5 +15,11 @@
             <groupId>com.test.project</groupId>
             <artifactId>hero-impl</artifactId>
         </dependency>
+            <dependency>
+                <groupId>com.test.project</groupId>
+                <artifactId>hero-autoconfig</artifactId>
+            </dependency>
     </dependencies>
+
+
 </project>
