@@ -11,5 +11,10 @@
 
     <artifactId>hero-impl</artifactId>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>com.test.project</groupId>
+            <artifactId>hero-domain</artifactId>
+        </dependency>
+    </dependencies>
 </project>

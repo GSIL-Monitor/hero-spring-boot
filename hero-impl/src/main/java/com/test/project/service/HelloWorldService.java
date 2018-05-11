@@ -1,11 +1,11 @@
 package com.test.project.service;
 
 /**
- * TODO 类描述
+ * hello接口
  *
  * @author hezun
  */
 public interface HelloWorldService {
 
-    String getHelloMessage();
+    void saveUser();
 }

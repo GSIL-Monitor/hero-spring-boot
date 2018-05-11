@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import com.test.project.HeroAutoConfig;
-import com.test.project.service.HelloWorldServiceIml;
+import com.test.project.service.HelloWorldServiceImpl;
 
 /**
  * TODO 类描述
@@ -24,7 +24,7 @@ public class HeroAutoConfigTest {
     @Test
     public void defaultServiceBacksOff() {
         this.contextRunner.withUserConfiguration(HelloWorldConfig.class)
-                .run((context) -> assertThat(context.getBean(HelloWorldServiceIml.class)).isSameAs(
+                .run((context) -> assertThat(context.getBean(HelloWorldServiceImpl.class)).isSameAs(
                         context.getBean(HelloWorldConfig.class).myHelloService()));
     }
 
@@ -32,8 +32,8 @@ public class HeroAutoConfigTest {
     static class HelloWorldConfig {
 
         @Bean
-        public HelloWorldServiceIml myHelloService() {
-            return new HelloWorldServiceIml();
+        public HelloWorldServiceImpl myHelloService() {
+            return new HelloWorldServiceImpl();
         }
     }
 }

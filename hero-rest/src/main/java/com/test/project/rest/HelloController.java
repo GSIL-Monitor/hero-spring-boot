@@ -20,7 +20,6 @@ public class HelloController {
 
     @RequestMapping("/")
     @ResponseBody
-    public String helloWorld() {
-        return this.myHelloService.getHelloMessage();
+    public void helloWorld() { this.myHelloService.saveUser();
     }
 }
